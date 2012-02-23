@@ -1,35 +1,119 @@
-<html>
-<head>
-	<title>test</title>
-	<style type="text/css">
-		body{background-color: #DDD;}
-		#myCanvas,
-		#kinetic {background-color: #fff; border-color: #333}
-		#stop{background-color: #f55;}
-	</style>
-	<style type="text/css">
-		#myCanvas,
-		#kinetic {width: 640px; height: 480px; margin: auto; border-width: 1px; border-style: solid; display: block}
-		#stop{width: 200px; height: 50px; text-align: center}
-		/*#stop.span{margin: auto}*/
-	</style>
-</head>
-<body>
-	<!-- <canvas id="myCanvas" width="640" height="480"></canvas> -->
-	<div id="kinetic"></div>
-	<div id="console"></div>
-	<div id="stop"><span>STOP</span></div>
-</body>
-<script type="text/javascript" src="reqAnim.js"></script>
-<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="underscore.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- <script type="text/javascript" src="raphael-min.js"></script> -->
-<!-- <script type="text/javascript" src="raph.js"></script> -->
+    <!-- Le styles -->
 
-<!-- <script type="text/javascript" src="requestAnimationFrame.js"></script> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
 
-<script type="text/javascript" src="kinetic-v3.8.0.min.js"></script>
-<script type="text/javascript" src="toily-kinetic.js"></script>
 
+    <style type="text/css">
+      /*body{background-color: #DDD;}*/
+      #myCanvas,
+      /*#kinetic {background-color: #fff; border-color: #333}*/
+      #stop{background-color: #f55;}
+    </style>
+    <style type="text/css">
+      #myCanvas,
+      /*#kinetic {width: 640px; height: 480px; margin: auto; border-width: 1px; border-style: solid; display: block}*/
+      /*#stop{width: 200px; height: 50px; text-align: center}*/
+      /*#stop.span{margin: auto}*/
+    </style>
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="span8">
+          <div id="kinetic" class="well"></div>
+        </div>
+        <div class="span4">
+          <div class="page-header"><h1>Canvas Playground</h1></div>
+          
+          <p>Time:</p>
+          <pre id="console"></pre>
+          <a class="btn btn-danger btn-large">Stop</a>
+        </div>
+      </div>
+
+      
+
+      <!-- <canvas id="myCanvas" width="640" height="480"></canvas> -->
+      <div class="span8">
+        
+        <!-- <div id="console"></div> -->
+      </div>
+
+
+      
+
+    </div> <!-- /container -->
+
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/reqAnim.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- <script type="text/javascript" src="raphael-min.js"></script> -->
+    <!-- <script type="text/javascript" src="raph.js"></script> -->
+
+    <!-- <script type="text/javascript" src="requestAnimationFrame.js"></script> -->
+
+    <script src="js/kinetic-v3.8.0.min.js"></script>
+    <script src="js/toily-kinetic.js"></script>
+
+
+  </body>
 </html>
